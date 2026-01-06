@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pa Pa Win Thwin | Web Developer</title>
+  <meta name="description" content="Portfolio of Pa Pa Win Thwin, Web Developer" />
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --card: #111827;      /* gray-900 */
+      --text: #e5e7eb;      /* gray-200 */
+      --muted: #9ca3af;     /* gray-400 */
+      --accent: #38bdf8;    /* sky-400 */
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #020617, var(--bg)); color: var(--text);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: center; padding: 64px 0; }
+    .badge { display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(56,189,248,.15); color: var(--accent); font-weight: 600; }
+    h1 { font-size: clamp(32px, 5vw, 56px); margin: 12px 0; }
+    p.lead { color: var(--muted); font-size: 18px; line-height: 1.6; }
+    .actions { display: flex; gap: 12px; margin-top: 24px; }
+    .btn { padding: 12px 18px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); background: #020617; color: var(--text); font-weight: 600; }
+    .btn.primary { background: linear-gradient(135deg, #0284c7, #38bdf8); color: #020617; border: none; }
+    section { padding: 48px 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: radial-gradient(120% 120% at 0% 0%, #020617, var(--card)); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 20px; }
+    .card h3 { margin-top: 0; }
+    ul { padding-left: 18px; }
+    .projects { grid-template-columns: repeat(2, 1fr); }
+    footer { border-top: 1px solid rgba(255,255,255,.08); padding: 24px 0; color: var(--muted); }
+    @media (max-width: 900px) {
+      header { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .projects { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <header>
+      <div>
+        <span class="badge">Web Developer</span>
+        <h1>Hi, I'm <br />Pa Pa Win Thwin</h1>
+        <p class="lead">I design and build modern, responsive websites and web apps with a focus on clean UI, performance, and usability.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="card" style="text-align:center">
+        <img src="p1.jpg" alt="Pa Pa Win Thwin" style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid rgba(56,189,248,.4);margin-bottom:16px" />
+        <h3>Pa Pa Win Thwin</h3>
+        <p style="color:var(--muted)">Web Developer</p>
+        <ul style="list-style:none;padding:0">
+          <li>📍 Myanmar</li>
+          <li>💼 Open to opportunities</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I am a passionate web developer with experience in building websites using modern web technologies. I enjoy turning ideas into real, user‑friendly products and continuously learning new tools and frameworks.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li></ul></div>
+        <div class="card"><h3>Frameworks</h3><ul><li>React (Basics)</li><li>Bootstrap / Tailwind</li></ul></div>
+        <div class="card"><h3>Tools</h3><ul><li>Git & GitHub</li><li>VS Code</li><li>Figma (UI)</li></ul></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid projects">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>Responsive website built with HTML, CSS, and JavaScript.</p>
+          <a href="#">Live Demo</a> · <a href="#">Source Code</a>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Web application with modern UI and clean layout.</p>
+          <a href="#">Live Demo</a> · <a href="#">Source Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: papa.tp.2020@gmail.com</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourusername</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Pa Pa Win Thwin. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
